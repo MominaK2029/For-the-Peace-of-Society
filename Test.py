@@ -50,12 +50,12 @@ NEG_events = [
 ]
 
 SPEC_events = [
-    "Collaboration with another company (+15 revenue)", 
+    "Collaboration with another company (+15%, revenue)", 
     "Got into controversy (-3 reputation)", 
     "Spider found in server room (we aint going in there)",
     "Taco tusday! (+5 motivation :>)",
     "Became an internet legend (+999 aura and +6 reputation)",
-    "Employees went on strike (-)"
+    "Employees went on strike (-15%, revenue and -3 reputation)",
 ]
 
 Events = {
