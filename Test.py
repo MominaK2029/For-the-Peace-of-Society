@@ -24,7 +24,7 @@ def pause(seconds = 1.5):
 
 Money = 100
 Event_chance = 0
-Tax = 0
+Tax = Money * 0.15
 Reputation = 5
 Investors = 0
 Revenue = 250
@@ -66,9 +66,12 @@ Events = {
 }
 
 weeks_left = 4
+Days = 0
+
+Name = input("Enter your name... ")
 
 slowingtext("<-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•>")
-slowingtext("Welcome sir! You are the new CEO of Generic.CO, and we \n"
+slowingtext(f"Welcome {Name}! You are the new CEO of Generic.CO, and we \n"
 "need your help to keep both our STOCKS and REPUTATION up! \n"
 "During your time as CEO, you'll need to maintain many things \n" 
 "alongside the previously mentioned stocks and reputation, these \n" 
@@ -79,5 +82,26 @@ slowingtext("Welcome sir! You are the new CEO of Generic.CO, and we \n"
 slowingtext("<-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•-•>")
 print()
 
-slowingtext("-◈-◈-◈-◈-◈-◈-◈-◈-◈-◈-◈-◈-◈-◈-")
-input()
+slowingtext("-◈-◈-◈-◈-◈-◈-◈ START ◈-◈-◈-◈-◈-◈-◈-")
+slowingtext("Info:")
+slowingtext(f" Weeks left: {weeks_left}")
+slowingtext(f" Days till end of week: {Days}")
+slowingtext(f" Current tax: {Tax}")
+
+slowingtext("Day Text")
+
+slowingtext("Option ideas")
+
+slowingtext("After Text")
+
+slowingtext("Day Text")
+
+slowingtext("Option ideas")
+
+slowingtext("After Text")
+
+slowingtext("Day Text")
+
+slowingtext("Option ideas")
+
+slowingtext("After text")

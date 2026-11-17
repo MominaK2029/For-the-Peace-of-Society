@@ -128,9 +128,9 @@ if weeks_left == 0:
         "You successfully kept both money and reputation \n"
         "in check! Good job :)")
     if Money == 0:
-        slowingtext("<------------ Bankrupt ------------> \n"
+        slowingtext("-◈-◈-◈-◈-◈ Bankrupt ◈-◈-◈-◈-◈- \n"
         "What were you doing, selling literal trash!? \n"
         "YOU'RE FIRED!")
     if Reputation <= 7:
-        slowingtext("<------------ Infamous mark------------> \n" \
+        slowingtext("-◈-◈-◈-◈-◈ Infamous mark ◈-◈-◈-◈-◈- \n" \
         "You've doomed us all")
