@@ -9,7 +9,7 @@ def clearTerminal():
     else:
         os.system('clear')
 clearTerminal()
-def typing(text, delay=0.08):
+def typing(text, delay=0.):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -17,13 +17,14 @@ def typing(text, delay=0.08):
     print()
 
 def slowingtext(text):
-    typing(text, delay=0.08)
+    typing(text, delay=0)
+def slowingtext1(text):
+    typing(text, delay=0)
 
 def pause(seconds = 1.5):
     time.sleep(seconds)
 
-Money = 250 
-Event_chance = 0
+Money = 250
 Tax = Money * 0.15
 Reputation = 5
 Investors = 0
@@ -65,8 +66,7 @@ Events = {
     "Special events" : SPEC_events
 }
 
-weeks_left = 4
-Days = 0
+weeks_left = 2
 
 Name = input("Enter your name... ")
 
@@ -85,31 +85,64 @@ print()
 slowingtext("-◈-◈-◈-◈-◈-◈-◈ START ◈-◈-◈-◈-◈-◈-◈-")
 slowingtext("Info:")
 slowingtext(f" Weeks left: {weeks_left}")
-slowingtext(f" Days till end of week: {Days}")
 slowingtext(f" Current tax: {Tax}")
 
-slowingtext("Day Text")
-slowingtext("The day drawls on as everyone works in the office. The people are okay but never the less work on and on. 
+slowingtext("The day drawls on as everyone works in the office. The people are okay but never the less work on and on. \n The taxes are alright, the managers are trying to make schedules and the company runs smoothly with the workers. \n Opportunities can be presented at any moment.")
 
-slowingtext("Option ideas")
+pos_event = random.choice(POS_events)
+neg_event = random.choice(NEG_events)
+nue_event = random.choice(NUE_events)
 
-slowingtext("After Text")
+slowingtext1("------------------------------------------------\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |       A:", (pos_event),                    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |       A:", (neg_event),                    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |       A:", (nue_event),                    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1("------------------------------------------------\n")
 
-slowingtext("Day Text")
+# slowingtext("After Text")
 
-slowingtext("Option ideas")
+# slowingtext("Day Text")
+slowingtext1("------------------------------------------------\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(f"|       A:", (pos_event),                    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(f"|       A:", (neg_event),                    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(f"|       A:", (nue_event),                    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1("------------------------------------------------\n")
 
-slowingtext("After Text")
 
-slowingtext("Day Text")
+# slowingtext("After Text")
 
-slowingtext("Option ideas")
+# slowingtext("Day Text")
+slowingtext1("------------------------------------------------\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(f"|       A:", (random.choice(POS_events)),    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(f"|       B:", (random.choice(NEG_events)),    "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(f"|      C:", (random.choice(NUE_events)),     "|\n")
+slowingtext1(" |                                             |\n")
+slowingtext1(" |                                             |\n")
+slowingtext1("------------------------------------------------\n")
 
-slowingtext("After text")
+# slowingtext("After text")
 
 if Money > 500:
     if Reputation >= 7:
-            if Tax < 75:
-                slowingtext("The office is happy, everyone is working hard and making good money. The taxes" /n, "are beginning to become nothing. Everyone is happy to have you as their CFO. What a good week." /n, "Society is stable and peaceful.")
+        if Tax < 75:
+            slowingtext("The office is happy, everyone is working hard and making good money. The taxes \n" "are beginning to become nothing. Everyone is happy to have you as their CFO. What a good week.\n" "Society is stable and peaceful.")
         slowingtext("The office is working moderately. The taxes are keeping everyone on a livable wage. But if something happens, they hope you can help them. Society is peaceful.")
     slowingtext("The office is bland and colorless. Everyone just comes to work and leaves. No one is happy and everything they do is the bare minimum. What is wrong? Everyone makes good money but is anyone really happy. Society is stable.") 
