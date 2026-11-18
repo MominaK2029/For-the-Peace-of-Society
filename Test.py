@@ -22,7 +22,7 @@ def slowingtext(text):
 def pause(seconds = 1.5):
     time.sleep(seconds)
 
-Money = 100
+Money = 250 
 Event_chance = 0
 Tax = Money * 0.15
 Reputation = 5
@@ -89,6 +89,7 @@ slowingtext(f" Days till end of week: {Days}")
 slowingtext(f" Current tax: {Tax}")
 
 slowingtext("Day Text")
+slowingtext("The day drawls on as everyone works in the office. The people are okay but never the less work on and on. 
 
 slowingtext("Option ideas")
 
@@ -105,3 +106,10 @@ slowingtext("Day Text")
 slowingtext("Option ideas")
 
 slowingtext("After text")
+
+if Money > 500:
+    if Reputation >= 7:
+            if Tax < 75:
+                slowingtext("The office is happy, everyone is working hard and making good money. The taxes" /n, "are beginning to become nothing. Everyone is happy to have you as their CFO. What a good week." /n, "Society is stable and peaceful.")
+        slowingtext("The office is working moderately. The taxes are keeping everyone on a livable wage. But if something happens, they hope you can help them. Society is peaceful.")
+    slowingtext("The office is bland and colorless. Everyone just comes to work and leaves. No one is happy and everything they do is the bare minimum. What is wrong? Everyone makes good money but is anyone really happy. Society is stable.") 
